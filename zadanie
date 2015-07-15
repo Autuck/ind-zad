@@ -1,0 +1,40 @@
+<!DOCTYPEhtml>
+<html>
+<head> 
+<title> инд зад </title>
+
+</head>
+<body> 
+<form name="forma1">
+Введите натуральное число n <input type="text" name="n" 
+size="10" />
+
+<br /><br />
+<input type="button" value="вычислить" onclick="otvet();" />
+<br /><br /> 
+
+<br /><br /> 
+</form> 
+</script>
+
+<script> 
+function otvet(){
+var n = document.forma1.n.value;
+var arr = []; 
+var d;
+var result = '';
+while (n!=0)
+{d = n % 2 ;
+result = arr [d]+result ;
+n =  n / 2;
+}
+while (result.length < 4)
+{
+result = '0'+result;
+}
+alert (result);
+}
+
+</script>
+</body>
+</html>
