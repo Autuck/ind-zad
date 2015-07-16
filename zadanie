@@ -11,7 +11,10 @@
 </head>
 
 <body>
-
+Программа перевода из десятичной системы в двоичную.
+<br> </br>
+Введи в окно число , которое хочешь перевести 
+<br> </br>
 <input type="text" id="z">
 
 <input type="button" id="butt" value="otvet">
