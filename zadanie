@@ -1,40 +1,33 @@
-<!DOCTYPEhtml>
+<!DOCTYPE HTML>
+
 <html>
-<head> 
-<title> инд зад </title>
+
+<head>
+
+
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 
 </head>
-<body> 
-<form name="forma1">
-Введите натуральное число n <input type="text" name="n" 
-size="10" />
 
-<br /><br />
-<input type="button" value="вычислить" onclick="otvet();" />
-<br /><br /> 
+<body>
 
-<br /><br /> 
-</form> 
-</script>
+<input type="text" id="z">
 
-<script> 
-function otvet(){
-var n = document.forma1.n.value;
-var arr = []; 
-var d;
-var result = '';
-while (n!=0)
-{d = n % 2 ;
-result = arr [d]+result ;
-n =  n / 2;
-}
-while (result.length < 4)
-{
-result = '0'+result;
-}
-alert (result);
-}
+<input type="button" id="butt" value="otvet">
+
+<script>
+
+$('#butt').click(function(){
+
+var n = +$('#z').val();
+
+$('#z').val(n.toString(2));
+
+});
 
 </script>
+
 </body>
+
 </html>
